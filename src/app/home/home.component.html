@@ -1,0 +1,23 @@
+<div class="addNewBtn" align="center">
+    <button class="btn btn-success" (click)="addNewEmployeeBtn()"> Add Employee <span class='sign'>+</span></button>
+</div>
+
+
+<div class="tableWrapper">
+    <h3 align="center">Employee List</h3>
+  <div class="containerTitle">
+    <div class="tblTitle">Name</div>
+    <div class="tblTitle">Designation</div>
+    <div class="tblTitle">Salary</div>
+    <div class="tblTitle">Actions</div>
+  </div>
+  <div class="containerListItems" *ngFor="let employee of empList; let i = index;" >
+    <div class="one">{{employee.name}}</div>
+    <div class="one">{{employee.salary}}</div>
+    <div class="one">{{employee.designation}}</div>
+    <div class="one">
+    <button class='btn btn-warning' title="Edit {{employee.name}}'s Detail" (click)="editEmployee(i)">Edit</button>
+    <button class='btn btn-danger'title="Delete {{employee.name}}'s Record" (click)="deleteEmployee(i)">Delete</button>
+    </div>
+  </div>
+</div>
