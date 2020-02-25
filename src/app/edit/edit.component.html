@@ -18,7 +18,8 @@
         <input type="text" class="form-control input" formControlName="salary" placeholder="Salary" required>
       </div>
       <div class="submitBtnContainer">
-        <button type="submit" class='btn btn-success' [disabled]='!editEmployeeForm.valid'>SAVE</button>
+        <button type="submit" class='btn btn-success' [disabled]='editEmployeeForm.invalid'>SAVE</button>
+        <button  class='btn btn-danger' (click)="onCancel()">Cancel</button>
       </div>
     </form>
   </div>

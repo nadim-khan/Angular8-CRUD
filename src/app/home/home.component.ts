@@ -30,19 +30,7 @@ export class HomeComponent implements OnInit {
   }
   deleteEmployee(i){
     if(confirm("Are you sure to delete this record ? ")){
-      this.empService.employees.splice(i);
-    }else{
-      return false;
+         this.empService.employees.splice(i,1);
+      }
     }
-   
-  }
-  changeColorOne() {
-    this.color = !this.color;
-    if (this.color) {
-      return '#ffffff';
-    } else {
-      return '#f6f6f6';
-    }
-  }
-
 }
