@@ -29,12 +29,12 @@ export class EditComponent implements OnInit {
     for(let i = 0; i < this.empService.employees.length; i++) {
       if(i == editEmployeeInfo) {
         this.empService.employees[i] = this.editEmployeeForm.value;
-        this.router.navigateByUrl('home');
+        this.router.navigateByUrl('employee');
       }
     }
   }
   onCancel(){
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl('employee');
   }
 
 }

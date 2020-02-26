@@ -20,7 +20,9 @@
 
 .one {
   flex: 1;
-  padding: 10px;
+  padding: 5px 0px 5px 15px;
+  border-bottom: 1px solid rgba(212, 205, 205, 0.315);
+  border-right:1px solid rgba(212, 205, 205, 0.315);
 }
 
 .addEmployeeBtnContainer {
@@ -55,23 +57,16 @@
 
 .tblTitle {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
   background: #444444;
   color: #ffffff;
+  font-size:15px;
 }
 
 .containerListItems {
   display: flex;
   font-size: 15px;
   padding-top: 5px;
-}
-
-.one,
-.two,
-.three,
-.four {
-  flex: 1;
-  padding: 10px;
 }
 
 .oneTitle,
@@ -97,8 +92,17 @@
 }
 
 .scrollList {
+  min-height:45vh;
   max-height: 48vh;
   overflow-y: auto;
+}
+.glyphicon{
+  margin-right:25px;
+  font-size:20px;
+  font-weight:600;
+}
+.glyphicon-trash{
+  color:red
 }
 
 @media screen and (max-width: 600px) {

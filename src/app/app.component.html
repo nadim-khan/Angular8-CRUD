@@ -1,16 +1,21 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myLinks">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" [routerLink]= "['/']">Angular 8 - CRUD</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myLinks">
       <ul class="nav navbar-nav">
-        <li class="active"><a [routerLink]='["/home"]'>Home</a></li>
+        <li class="moduleLink"><a title="Employee Details" [routerLink]='["/employee"]'><span class='glyphicon glyphicon-pawn'>Employees</span></a></li>
+        <li class="moduleLink"><a title="Company Details"[routerLink]='["/company"]'><span class='glyphicon glyphicon-tent'>Company</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a title="Signup"><span class="glyphicon glyphicon-user"></span> </a></li>
+        <li><a title="Login"><span class="glyphicon glyphicon-log-in"></span> </a></li>
       </ul>
     </div>
   </div>

@@ -1,7 +1,7 @@
 import {  Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { EmployeeService } from './../shared/employee.service';
+import { EmployeeService } from '../shared/employee.service';
 
 @Component({
   selector: 'app-home',

@@ -29,7 +29,7 @@ export class CreateComponent implements OnInit {
     this.model = this.createEmployee.value;
     this.empService.employees.push(this.model);
     this.model = {};
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('employee');
   }
   
   

@@ -1,12 +1,29 @@
 <div class="addNewBtn" align="center">
   <button class="btn btn-success" (click)="addNewEmployeeBtn()"> Add Employee <span class='sign'>+</span></button>
 </div>
-
-
 <div class="tableWrapper">
   <label>Filter</label>
   <input class="form-control input" placeholder="Filter" [(ngModel)]="searchText">
   <h3 align="center">Employee List</h3>
+  <!-- <table class="table table-condensed">
+    <tr>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Designation</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let employee of empList | filterEmp:searchText; let i = index; " title="{{employee.name}}">
+      <td >{{employee.name}}</td>
+        <td >{{employee.salary}}</td>
+        <td >{{employee.designation}}</td>
+        <td >
+          <a class='	glyphicon glyphicon-pencil' title="Edit {{employee.name}}'s Detail" (click)="editEmployee(i)"></a>
+          <a class='glyphicon glyphicon-trash' title="Delete {{employee.name}}'s Record"
+            (click)="deleteEmployee(i)"></a>
+        </td>
+  
+    </tr>
+  </table> -->
   <div class="containerTitle">
     <div class="tblTitle">Name</div>
     <div class="tblTitle">Salary</div>
@@ -14,14 +31,14 @@
     <div class="tblTitle">Actions</div>
   </div>
   <div class="scrollList">
-    <div class="containerListItems" *ngFor="let employee of empList | filterEmp:searchText; let i = index; ">
+    <div class="containerListItems" *ngFor="let employee of empList | filterEmp:searchText; let i = index; " title="{{employee.name}}">
       <div class="one">{{employee.name}}</div>
       <div class="one">{{employee.salary}}</div>
       <div class="one">{{employee.designation}}</div>
       <div class="one">
-        <button class='btn btn-warning' title="Edit {{employee.name}}'s Detail" (click)="editEmployee(i)">Edit</button>
-        <button class='btn btn-danger' title="Delete {{employee.name}}'s Record"
-          (click)="deleteEmployee(i)">Delete</button>
+        <a class='	glyphicon glyphicon-pencil' title="Edit {{employee.name}}'s Detail" (click)="editEmployee(i)"></a>
+        <a class='glyphicon glyphicon-trash' title="Delete {{employee.name}}'s Record"
+          (click)="deleteEmployee(i)"></a>
       </div>
     </div>
   </div>

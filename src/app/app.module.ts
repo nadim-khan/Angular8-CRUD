@@ -12,6 +12,8 @@ import { EditComponent } from './edit/edit.component';
 import { ErrorComponent } from './error/error.component';
 import { CreateComponent } from './create/create.component';
 import { FilterPipe } from './shared/filter.pipe';
+import { EmployeeService } from './shared/employee.service';
+import { DetailsModule } from './details/details.module';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,11 @@ import { FilterPipe } from './shared/filter.pipe';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DetailsModule
 
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
