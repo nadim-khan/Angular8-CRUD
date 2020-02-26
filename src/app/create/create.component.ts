@@ -27,7 +27,6 @@ export class CreateComponent implements OnInit {
 
   addEmployee() {
     this.model = this.createEmployee.value;
-    console.log("modal : ", this.model)
     this.empService.employees.push(this.model);
     this.model = {};
     this.router.navigateByUrl('/home');

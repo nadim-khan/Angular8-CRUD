@@ -8,4 +8,16 @@
   .submitBtnContainer{
     text-align:center;
   }
-  
+  button{
+    margin:5px;
+  }
+  @media screen and (max-width: 600px) {
+    .formWrapper{
+      margin-top:20px;
+      padding:20px;
+      background:#f6f6f6;
+      max-width:80%;
+      margin-left:10%;
+    }
+    
+  }

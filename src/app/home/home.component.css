@@ -1,83 +1,110 @@
-.addNewBtn{
-    text-align:"center";
-    flex:1;
-    background:#f6f6f6;
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
-    padding:20px;
+.addNewBtn {
+  text-align: "center";
+  flex: 1;
+  background: #f6f6f6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
 }
-.addNewBtn button{
-    width:30%;
-    height:5rem;
-    font-size:20px;
-}
-.sign{
-    font-weight:600;
-    margin-left:20px;
-}
-  .one {
-    flex:1;
-    padding:10px;
-  }
-  
-  .addEmployeeBtnContainer {
-    flex:1;
-    background:#f6f6f6;
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
-  }
 
-  
+.addNewBtn button {
+  width: 30%;
+  height: 5rem;
+  font-size: 20px;
+}
 
-  .tableWrapper {     
-    margin-top:20px;
-    padding:20px;
-    background:#f6f6f6;
+.sign {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.one {
+  flex: 1;
+  padding: 10px;
+}
+
+.addEmployeeBtnContainer {
+  flex: 1;
+  background: #f6f6f6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+.tableWrapper {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f6f6f6;
+}
+
+.formWrapper {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f6f6f6;
+  max-width: 40%;
+  margin-left: 30%;
+}
+
+.containerTitle {
+  display: flex;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tblTitle {
+  flex: 1;
+  padding: 10px;
+  background: #444444;
+  color: #ffffff;
+}
+
+.containerListItems {
+  display: flex;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  flex: 1;
+  padding: 10px;
+}
+
+.oneTitle,
+.twoTitle,
+.threeTitle {
+  flex: 1;
+  padding: 10px;
+  background: #444444;
+  color: #ffffff;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.submitBtnContainer {
+  text-align: center;
+}
+
+.containerListItems:hover {
+  background: rgb(199, 227, 238);
+  color: black;
+}
+
+.scrollList {
+  max-height: 48vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .addNewBtn button {
+    width: 60%;
+    height: 5rem;
+    font-size: 16px;
   }
-  .formWrapper{
-    margin-top:20px;
-    padding:20px;
-    background:#f6f6f6;
-    max-width:40%;
-    margin-left:30%;
-  }
-  .containerTitle {
-    display:flex;
-    margin-top:20px;
-    font-size:12px;
-    font-weight:bold;
-  }
-  .tblTitle {
-    flex:1;
-    padding:10px;
-    background:#444444;
-    color:#ffffff;
-  }
-  .containerListItems {
-    display:flex;
-    font-size:15px;
-    padding-top:5px;
-  }
-  .one, .two,.three,.four{
-    flex:1;
-    padding:10px;
-  }
-  
-  .oneTitle,.twoTitle ,.threeTitle{
-    flex:1;
-    padding:10px;
-    background:#444444;
-    color:#ffffff;
-  }
-  .btn{
-      margin:5px;
-  }
-  .submitBtnContainer{
-    text-align:center;
-  }
-  .containerListItems:hover{
-      background:rgb(199, 227, 238);
-      color:black;
-      transform:scale(1.01)
-  }
-  
+}

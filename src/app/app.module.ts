@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { EditComponent } from './edit/edit.component';
 import { ErrorComponent } from './error/error.component';
 import { CreateComponent } from './create/create.component';
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CreateComponent } from './create/create.component';
     HomeComponent,
     EditComponent,
     ErrorComponent,
-    CreateComponent
+    CreateComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

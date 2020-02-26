@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   newEmployeeClicked = false;
   color;
   empList;
+  searchText;
 
   constructor( private router: Router,private empService:EmployeeService ,) { }
 

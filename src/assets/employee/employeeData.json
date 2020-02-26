@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Nadeem Khan",
+        "salary": "250000",
+        "designation": "Sr. Developer"
+    },
+    {
+        "name": "Amit Waghmare",
+        "salary": "350000",
+        "designation": "Group Lead"
+    },
+    {
+        "name": "Vivek Ratre",
+        "salary": "650000",
+        "designation": "Romin"
+    },
+    {
+        "name": "Arpita Kulkarni",
+        "salary": "350000",
+        "designation": "Project Manager"
+    },
+    {
+        "name": "Firdose Sheikh",
+        "salary": "250000",
+        "designation": "Sales Executive Head"
+    },
+    {
+        "name": "Joseph King",
+        "salary": "450000",
+        "designation": "Human Resourse"
+    }
+]

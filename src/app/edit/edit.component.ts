@@ -32,7 +32,6 @@ export class EditComponent implements OnInit {
         this.router.navigateByUrl('home');
       }
     }
-    console.log(this.editEmployeeForm.value);
   }
   onCancel(){
     this.router.navigateByUrl('home');
