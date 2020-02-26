@@ -18,6 +18,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.empList = this.empService.employees;
+    // this.empService.getEmployeeList()
+    // .subscribe(data=>{
+    //   this.empList= data;
+    //   console.log(this.empList)
+    // })
   }
 
   addNewEmployeeBtn() {
